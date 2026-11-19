@@ -102,7 +102,7 @@ def search():
 if __name__ == '__main__':
     os.environ.pop("WERKZEUG_SERVER_FD", None)
     os.environ.pop("WERKZEUG_RUN_MAIN", None)
-    port = int(os.environ.get("PORT", os.environ.get("FLIPKART_PORT", 5208)))
+    port = int(os.environ.get("PORT", os.environ.get("FLIPKART_PORT", 6208)))
     host = os.environ.get("HOST", "127.0.0.1")
     print(f"🚀 Flipkart Scrapper App running on http://{host}:{port}")
     app.run(host=host, port=port, debug=False, use_reloader=False)
