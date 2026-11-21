@@ -33,3 +33,4 @@ command = ["uv", "run", "main.py"]
 [environments.production.env]
 PORT = 7208
 APP_ENV = "production"
+
