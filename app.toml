@@ -1,0 +1,35 @@
+# ==============================================================================
+# Flipkart Review Scraper - Unified Application Manifest
+# ==============================================================================
+
+[app]
+id = "flipkart-scrapper"
+name = "Flipkart Review Scraper"
+category = "public_projects"
+slug = "flipkart-scrapper"
+url_path = "/flipkart-scrapper/"
+type = "python"
+
+# ------------------------------------------------------------------------------
+# Development Environment
+# ------------------------------------------------------------------------------
+[environments.development]
+port = 5208
+host = "127.0.0.1"
+command = ["uv", "run", "main.py"]
+
+[environments.development.env]
+PORT = 5208
+APP_ENV = "development"
+
+# ------------------------------------------------------------------------------
+# Production Environment
+# ------------------------------------------------------------------------------
+[environments.production]
+port = 7208
+host = "127.0.0.1"
+command = ["uv", "run", "main.py"]
+
+[environments.production.env]
+PORT = 7208
+APP_ENV = "production"
